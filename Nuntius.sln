@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuntios.Core.Test", "test\N
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuntios.Core.Storage.EF", "core\Nuntios.Core.Storage.EF\Nuntios.Core.Storage.EF.csproj", "{99113DEE-5C46-41C3-968C-ACCEC0F90D60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuntios.Core.Storege.EF", "test\Nuntios.Core.Storege.EF\Nuntios.Core.Storege.EF.csproj", "{EAF78D55-303E-4674-A41E-8A75D4C630C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,18 @@ Global
 		{99113DEE-5C46-41C3-968C-ACCEC0F90D60}.Release|x64.Build.0 = Release|Any CPU
 		{99113DEE-5C46-41C3-968C-ACCEC0F90D60}.Release|x86.ActiveCfg = Release|Any CPU
 		{99113DEE-5C46-41C3-968C-ACCEC0F90D60}.Release|x86.Build.0 = Release|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Debug|x64.Build.0 = Debug|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Debug|x86.Build.0 = Debug|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Release|x64.ActiveCfg = Release|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Release|x64.Build.0 = Release|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Release|x86.ActiveCfg = Release|Any CPU
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,5 +81,6 @@ Global
 		{D5D05B35-E77F-4858-93A8-9BCA8E16EC00} = {ED35B5B6-D0EA-477D-B765-01028ECF6A86}
 		{2A99B2A7-E07C-4CE5-ADCB-CA3740475F3D} = {37447842-0FC1-45A3-8BFF-F964552EB99B}
 		{99113DEE-5C46-41C3-968C-ACCEC0F90D60} = {ED35B5B6-D0EA-477D-B765-01028ECF6A86}
+		{EAF78D55-303E-4674-A41E-8A75D4C630C8} = {37447842-0FC1-45A3-8BFF-F964552EB99B}
 	EndGlobalSection
 EndGlobal

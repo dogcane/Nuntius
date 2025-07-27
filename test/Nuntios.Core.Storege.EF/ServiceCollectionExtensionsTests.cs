@@ -8,7 +8,6 @@ using Nuntius.Core.Rendering.Infrastructure;
 using Nuntius.Core.Templates.Infrastructure;
 using Nuntios.Core.Storage.EF;
 using Nuntios.Core.Storage.EF.Extensions;
-using Xunit;
 
 namespace Nuntios.Core.Test.Storage;
 

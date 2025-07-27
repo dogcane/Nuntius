@@ -3,9 +3,6 @@ using Nuntius.Core.Fetching.Infrastructure;
 
 namespace Nuntios.Core.Storage.EF.Stores;
 
-public class DataFetcherStore : EfStore<DataFetcher, string>, IDataFetcherStore
+public class DataFetcherStore(NuntiusDbContext context) : EfStore<DataFetcher, string>(context), IDataFetcherStore
 {
-    public DataFetcherStore(NuntiusDbContext context) : base(context)
-    {
-    }
 }

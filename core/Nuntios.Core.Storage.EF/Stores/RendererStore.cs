@@ -3,9 +3,6 @@ using Nuntius.Core.Rendering.Infrastructure;
 
 namespace Nuntios.Core.Storage.EF.Stores;
 
-public class RendererStore : EfStore<Renderer, string>, IRendererStore
+public class RendererStore(NuntiusDbContext context) : EfStore<Renderer, string>(context), IRendererStore
 {
-    public RendererStore(NuntiusDbContext context) : base(context)
-    {
-    }
 }
