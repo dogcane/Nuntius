@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\core\Nuntius.Core\Nuntius.Core.csproj" />
+    <ProjectReference Include="..\..\core\Nuntios.Core.Storage.EF\Nuntios.Core.Storage.EF.csproj" />
   </ItemGroup>
 
 </Project>
