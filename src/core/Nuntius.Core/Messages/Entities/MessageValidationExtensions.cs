@@ -4,7 +4,7 @@ using Nuntius.Core.Templates.Entities;
 using Resulz.Validation;
 using System.Text.Json;
 
-namespace Nuntius.Core.Messages;
+namespace Nuntius.Core.Messages.Entities;
 
 public static class MessageValidationExtensions
 {

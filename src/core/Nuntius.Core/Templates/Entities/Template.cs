@@ -1,5 +1,5 @@
 ﻿using Nuntius.Core.Common.Entities;
-using Nuntius.Core.Messages;
+using Nuntius.Core.Messages.Entities;
 using Resulz;
 
 namespace Nuntius.Core.Templates.Entities;

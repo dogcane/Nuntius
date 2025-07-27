@@ -1,6 +1,6 @@
 ﻿using Resulz;
-using Nuntius.Core.Messages;
 using Nuntius.Core.Fetching.Entities;
+using Nuntius.Core.Messages.Entities;
 
 namespace Nuntius.Core.Engines;
 

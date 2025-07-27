@@ -7,7 +7,7 @@ using Resulz.Validation;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 
-namespace Nuntius.Core.Messages;
+namespace Nuntius.Core.Messages.Entities;
 
 public class Message : Entity<int>
 {

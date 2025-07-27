@@ -1,6 +1,6 @@
 using FluentAssertions;
 using Nuntius.Core.Common.Entities;
-using Nuntius.Core.Messages;
+using Nuntius.Core.Messages.Entities;
 using Nuntius.Core.Templates.Entities;
 using Resulz;
 using Xunit;

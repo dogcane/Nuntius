@@ -1,4 +1,4 @@
-﻿namespace Nuntius.Core.Messages;
+﻿namespace Nuntius.Core.Messages.Entities;
 
 public sealed record MessageCreationMode
 {

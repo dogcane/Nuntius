@@ -1,6 +1,6 @@
 ﻿using Nuntius.Core.Common.Entities;
 
-namespace Nuntius.Core.Messages;
+namespace Nuntius.Core.Messages.Entities;
 
 public class MessageAttachment : Entity<int>
 {

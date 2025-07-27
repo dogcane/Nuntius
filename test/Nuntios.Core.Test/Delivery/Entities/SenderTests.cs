@@ -1,7 +1,7 @@
 using FluentAssertions;
 using Nuntius.Core.Common.Entities;
 using Nuntius.Core.Delivery.Entities;
-using Nuntius.Core.Messages;
+using Nuntius.Core.Messages.Entities;
 using Resulz;
 using Xunit;
 
