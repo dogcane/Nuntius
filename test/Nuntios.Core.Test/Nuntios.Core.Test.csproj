@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\core\Nuntius.Core\Nuntius.Core.csproj" />
+    <ProjectReference Include="..\..\core\Nuntios.Core.Storage.EF\Nuntios.Core.Storage.EF.csproj" />
   </ItemGroup>
 
 </Project>
