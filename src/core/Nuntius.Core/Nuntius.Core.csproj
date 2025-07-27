@@ -17,7 +17,6 @@
     <Folder Include="Fetching\Commands\" />
     <Folder Include="Fetching\Models\" />
     <Folder Include="Fetching\Queries\" />
-    <Folder Include="Rendering\" />
     <Folder Include="Templates\Models\" />
     <Folder Include="Templates\Commands\" />
     <Folder Include="Templates\Queries\" />
