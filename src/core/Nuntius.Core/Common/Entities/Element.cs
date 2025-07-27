@@ -1,6 +1,6 @@
 using Resulz;
 
-namespace Nuntius.Core.Common;
+namespace Nuntius.Core.Common.Entities;
 
 public abstract partial class Element<TKey> : Entity<TKey>
     where TKey : notnull
@@ -16,6 +16,7 @@ public abstract partial class Element<TKey> : Entity<TKey>
     #endregion
 
     #region Methods
+
     public virtual OperationResult Enable()
         => ValidateStatus(Status, ElementStatus.Enabled)
             .IfSuccess(_ => Status = ElementStatus.Enabled);

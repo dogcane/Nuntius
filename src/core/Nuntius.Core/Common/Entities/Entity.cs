@@ -1,4 +1,4 @@
-namespace Nuntius.Core.Common;
+namespace Nuntius.Core.Common.Entities;
 
 public abstract class Entity<TKey> : IEquatable<Entity<TKey>>
     where TKey : notnull

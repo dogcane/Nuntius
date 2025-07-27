@@ -1,3 +1,4 @@
+using Nuntius.Core.Common.Entities;
 using Nuntius.Core.Messages;
 using Resulz;
 using Resulz.Validation;
@@ -7,11 +8,11 @@ namespace Nuntius.Core.Templates.Entities;
 public partial class Template
 {
     #region Methods
-    protected static OperationResult Validate(string id, string name, string engineName, TemplateContext context, string subject, string content, MessageType messageType)
+    protected static OperationResult Validate(string id, string name, string engineId, TemplateContext context, string subject, string content, MessageType messageType)
         => OperationResult.MakeSuccess()
-            .With(id, nameof(id)).Required().StringLength(50).StringMatch("^[a-zA-Z0-9_-]{1,50}$")
-            .With(name, nameof(name)).Required().StringLength(50).StringMatch("^[a-zA-Z0-9_-]{1,50}$")
-            .With(engineName, nameof(engineName)).Required().StringLength(50).StringMatch("^[a-zA-Z0-9_-]{1,50}$")
+            .With(id, nameof(id)).ValidId()
+            .With(name, nameof(name)).Required().StringLength(100)
+            .With(engineId, nameof(engineId)).ValidId()
             .With(context, nameof(context)).Required()
             .With(context?.Language, $"{nameof(context)}.{nameof(context.Language)}").Required().StringLength(2)
             .With(context?.Scope, $"{nameof(context)}.{nameof(context.Scope)}").StringLength(50)

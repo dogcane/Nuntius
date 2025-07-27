@@ -7,10 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Resulz" Version="1.5.3" />
+    <PackageReference Include="Resulz" Version="1.6.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Delivery\Commands\" />
+    <Folder Include="Delivery\Models\" />
+    <Folder Include="Delivery\Queries\" />
+    <Folder Include="Fetching\Commands\" />
+    <Folder Include="Fetching\Models\" />
+    <Folder Include="Fetching\Queries\" />
+    <Folder Include="Rendering\" />
     <Folder Include="Templates\Models\" />
     <Folder Include="Templates\Commands\" />
     <Folder Include="Templates\Queries\" />

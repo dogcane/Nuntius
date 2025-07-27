@@ -1,4 +1,4 @@
-﻿using Nuntius.Core.Common;
+﻿using Nuntius.Core.Common.Entities;
 using Nuntius.Core.Messages;
 using Resulz;
 
@@ -8,7 +8,7 @@ public partial class Template : Element<string>
 {
     #region Properties
     public virtual string Name { get; protected set; } = string.Empty;
-    public virtual string EngineName { get; protected set; } = string.Empty;
+    public virtual string EngineId { get; protected set; } = string.Empty;
     public virtual TemplateContext Context { get; protected set; } = new();
     public virtual string Subject { get; protected set; } = string.Empty;
     public virtual string Content { get; protected set; } = string.Empty;
@@ -18,22 +18,22 @@ public partial class Template : Element<string>
     #region Ctor
     protected Template() : base() { }
     
-    protected Template(string id, string name, string engineName, TemplateContext context, string subject, string content, MessageType messageType) 
+    protected Template(string id, string name, string engineId, TemplateContext context, string subject, string content, MessageType messageType) 
         : base(id)
-        => (Name, EngineName, Context, Subject, Content, MessageType) = 
-           (name.ToUpper(), engineName.ToUpper(), context, subject, content, messageType);
+        => (Name, EngineId, Context, Subject, Content, MessageType) = 
+           (name.ToUpper(), engineId.ToUpper(), context, subject, content, messageType);
     #endregion
 
     #region Factory Method
-    public static OperationResult<Template> Create(string id, string name, string engineName, TemplateContext context, string subject, string content, MessageType messageType)
-        => Validate(id, name, engineName, context, subject, content, messageType)
-            .IfSuccessThenReturn(() => new Template(id, name, engineName, context, subject, content, messageType));
+    public static OperationResult<Template> Create(string id, string name, string engineId, TemplateContext context, string subject, string content, MessageType messageType)
+        => Validate(id, name, engineId, context, subject, content, messageType)
+            .IfSuccessThenReturn(() => new Template(id, name, engineId, context, subject, content, messageType));
     #endregion
 
     #region Methods
-    public virtual OperationResult Update(string engineName, string subject, string content)
-        => ValidateStatus(this.Status, this.Status)
-            .IfSuccess(_ => Validate(this.Id!, this.Name, engineName, this.Context, subject, content, this.MessageType))
-            .IfSuccess(res => (EngineName, Subject, Content) = (engineName.ToUpper(), subject, content));
+    public virtual OperationResult Update(string engineId, string subject, string content)
+        => ValidateEnable()
+        .Then(() => Validate(this.Id!, this.Name, engineId, this.Context, subject, content, this.MessageType))
+        .IfSuccess(res => (EngineId, Subject, Content) = (engineId.ToUpper(), subject, content));
     #endregion
 }

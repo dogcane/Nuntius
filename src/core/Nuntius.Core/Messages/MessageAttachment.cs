@@ -1,4 +1,4 @@
-﻿using Nuntius.Core.Common;
+﻿using Nuntius.Core.Common.Entities;
 
 namespace Nuntius.Core.Messages;
 

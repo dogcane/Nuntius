@@ -1,4 +1,6 @@
-namespace Nuntius.Core.Common;
+using Nuntius.Core.Common.Entities;
+
+namespace Nuntius.Core.Common.Infrastructure;
 
 public interface IStore<TEntity, TKey>
     where TEntity : Entity<TKey>

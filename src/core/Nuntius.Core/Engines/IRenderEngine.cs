@@ -6,6 +6,6 @@ namespace Nuntius.Core.Engines;
 
 public interface IRenderEngine
 {
-    public string Name { get; }
+    public string Id { get; }
     public OperationResult<RenderedMessage> RenderMessage(Template template, Message message);
 }

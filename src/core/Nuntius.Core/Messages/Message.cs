@@ -1,6 +1,6 @@
-﻿using Nuntius.Core.Common;
-using Nuntius.Core.Delivery;
-using Nuntius.Core.Fetching;
+﻿using Nuntius.Core.Common.Entities;
+using Nuntius.Core.Delivery.Entities;
+using Nuntius.Core.Fetching.Entities;
 using Nuntius.Core.Templates.Entities;
 using Resulz;
 using Resulz.Validation;

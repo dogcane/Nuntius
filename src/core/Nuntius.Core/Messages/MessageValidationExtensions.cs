@@ -1,5 +1,5 @@
-﻿using Nuntius.Core.Delivery;
-using Nuntius.Core.Fetching;
+﻿using Nuntius.Core.Delivery.Entities;
+using Nuntius.Core.Fetching.Entities;
 using Nuntius.Core.Templates.Entities;
 using Resulz.Validation;
 using System.Text.Json;

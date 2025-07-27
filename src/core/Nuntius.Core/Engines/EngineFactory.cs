@@ -16,36 +16,36 @@ public class EngineFactory : IEngineFactory
         ArgumentNullException.ThrowIfNull(senderEngines, nameof(senderEngines));
         foreach (var modelEngine in builderEngines)
         {
-            this.fetcherEngines.TryAdd(modelEngine.Name, modelEngine);
+            this.fetcherEngines.TryAdd(modelEngine.Id, modelEngine);
         }
         foreach (var viewEngine in renderEngines)
         {
-            this.renderEngines.TryAdd(viewEngine.Name, viewEngine);
+            this.renderEngines.TryAdd(viewEngine.Id, viewEngine);
         }
         foreach (var senderEngine in senderEngines)
         {
-            this.senderEngines.TryAdd(senderEngine.Name, senderEngine);
+            this.senderEngines.TryAdd(senderEngine.Id, senderEngine);
         }
     }    
     #endregion
 
     #region Methods
-    public IDataFetcherEngine GetDataFetcherEngine(string engineName) 
-        => fetcherEngines.TryGetValue(engineName, out var engine) ? engine : throw new ArgumentException($"Engine with name {engineName} not found", nameof(engineName));
+    public IDataFetcherEngine GetDataFetcherEngine(string engineId) 
+        => fetcherEngines.TryGetValue(engineId, out var engine) ? engine : throw new ArgumentException($"Engine with id {engineId} not found", nameof(engineId));
 
-    public bool TryGetDataFetcherEngine(string engineName, out IDataFetcherEngine? engine)
-        => fetcherEngines.TryGetValue(engineName, out engine);
+    public bool TryGetDataFetcherEngine(string engineId, out IDataFetcherEngine? engine)
+        => fetcherEngines.TryGetValue(engineId, out engine);
 
-    public IRenderEngine GetRenderEngine(string engineName) 
-        => renderEngines.TryGetValue(engineName, out var engine) ? engine : throw new ArgumentException($"Engine with name {engineName} not found", nameof(engineName));
+    public IRenderEngine GetRenderEngine(string engineId) 
+        => renderEngines.TryGetValue(engineId, out var engine) ? engine : throw new ArgumentException($"Engine with id {engineId} not found", nameof(engineId));
 
-    public bool TryGetRenderEngine(string engineName, out IRenderEngine? engine)
-        => renderEngines.TryGetValue(engineName, out engine);
+    public bool TryGetRenderEngine(string engineId, out IRenderEngine? engine)
+        => renderEngines.TryGetValue(engineId, out engine);
 
-    public ISenderEngine GetSenderEngine(string engineName)
-        => senderEngines.TryGetValue(engineName, out var engine) ? engine : throw new ArgumentException($"Engine with name {engineName} not found", nameof(engineName));
+    public ISenderEngine GetSenderEngine(string engineId)
+        => senderEngines.TryGetValue(engineId, out var engine) ? engine : throw new ArgumentException($"Engine with id {engineId} not found", nameof(engineId));
 
-    public bool TryGetSenderEngine(string engineName, out ISenderEngine? engine)
-        => senderEngines.TryGetValue(engineName, out engine);
+    public bool TryGetSenderEngine(string engineId, out ISenderEngine? engine)
+        => senderEngines.TryGetValue(engineId, out engine);
     #endregion
 }
